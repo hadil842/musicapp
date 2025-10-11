@@ -1,70 +1,34 @@
+
 ul {
   list-style-type: none;
-  padding: 0;
   margin: 0;
-  color: #f5f5f5;
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-  position: sticky;
-  top: 0;
-  z-index: 1000; 
+  padding: 0;
+  overflow: hidden;
   background-color: #636060;
+  border-radius: 32px;
   height: 70px;
-  border-radius:32px ;
 }
 
-
-.left-item {
-  font-size: 35px;
-  margin-left: 60px;
-  box-sizing: border-box;
-  font-weight: bold;
-  
-}
-.right-item {
-  margin-right: 20px; 
-  font-size: 35px;
-  box-sizing: border-box;
-}
-.right-item button{
-    padding: 14px;
-    background-color:#636060; 
-    color: #f3ecec;
-    border: none;
-    border-radius: 6px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-    display: block; 
-    width: 150px;
-    box-sizing: border-box;
-    margin: 0 auto;
-    text-align: center; 
-    font-size: 30px;
-
-}
-.right-item button {
-   text-decoration: none;
-   color: inherit;
-   
-   display: block;
-   text-align: center;
-}
-.right-item button:active{
-     background-color: #4b4848; 
-     transform: translateY(2px);
-      box-shadow: none;
-}
-.right-item button:hover {
-    background-color: #7a7777; 
-    border-color: #ffffff; 
-    transform: translateY(-1px); 
-    border-radius: 32px;
+ul li {
+  float: left;
+  padding: 14px 16px;
 }
 
-.right-item button:focus {
-    outline: none; 
-    box-shadow: 0 0 0 4px #ffffff, 0 0 0 2px #636060; 
-    transform: translateY(-1px);
+ul li a {
+  display: block;
+  color: rgb(228, 222, 222);
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  padding-left: 12px;
+}
+
+ul li a:hover {
+  background-color: #746b6b;
+  color: white;
+  border-radius: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  height: auto;
+  width: auto;
+  text-align: center;
 }

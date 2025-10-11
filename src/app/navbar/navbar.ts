@@ -13,4 +13,10 @@ export class Navbar {
      gotologin():void{
       this.router.navigate(['/login']);
      }
+     gotomain():void{
+      this.router.navigate(['/home']);
+     }
+    gotonew():void{
+      this.router.navigate(['/new']);
+     }
 }

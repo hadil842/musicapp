@@ -1,11 +1,23 @@
 <nav>
     <ul>
-        <li class="left-item">Music</li>
-        <li class="right-item">
-            <button (click)="gotologin()">
+        <li >
+            <a (click)="gotomain()">
+                Home
+            </a>
+        </li>
+        <li>
+            <a (click)="gotonew()">
+                New
+            </a>
+        </li>
+        <li >
+            <a (click)="gotologin()">
                 Login
-            </button>
+            </a>
         </li>
     </ul>
     <router-outlet></router-outlet>
 </nav> 
+
+
+
