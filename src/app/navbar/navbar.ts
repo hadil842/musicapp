@@ -13,10 +13,16 @@ export class Navbar {
      gotologin():void{
       this.router.navigate(['/login']);
      }
-     gotomain():void{
+     gotohome():void{
       this.router.navigate(['/home']);
      }
-    gotonew():void{
-      this.router.navigate(['/new']);
+    gotosearch():void{
+      this.router.navigate(['/search']);
+     }
+     gotolibrary():void{
+      this.router.navigate(['/library']);
+     }
+     gotoradio():void{
+      this.router.navigate(['/radio']);
      }
 }

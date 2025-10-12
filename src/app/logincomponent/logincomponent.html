@@ -1,7 +1,24 @@
-<form>
-    <h1>Login</h1>
-    <label>Username :</label>
-    <input type="text"id="nom"placeholder="Enter your username"><br>
-    <label>Password :</label>
-    <input type="passsword"id="nom"placeholder="Enter your username">
-</form>
+ <form action="/submit-form" method="post">
+        <h1>Login</h1>
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="user_name" placeholder="Entrer votre nom" required />
+        </div>
+        
+        <div>
+            <label for="mail">E-mail</label>
+            <input type="email" id="mail" name="user_mail" placeholder="Entrer votre email" required />
+        </div>
+        
+        <div>
+            <label for="pwd">Password</label>
+            <input type="password" id="pwd" name="user_password" placeholder="Entrer votre mot de passe" required />
+        </div>
+        <div>
+            <a href="">Sign in</a>
+        </div>
+        <div class="button">
+            <button type="submit">Login</button>
+        </div>
+        <script src="js.js"></script>
+    </form>
