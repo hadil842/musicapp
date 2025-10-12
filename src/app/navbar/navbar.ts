@@ -22,7 +22,4 @@ export class Navbar {
      gotolibrary():void{
       this.router.navigate(['/library']);
      }
-     gotoradio():void{
-      this.router.navigate(['/radio']);
-     }
 }

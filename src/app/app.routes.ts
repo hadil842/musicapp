@@ -3,8 +3,7 @@ import { Logincomponent } from './logincomponent/logincomponent';
 import { Maincomponent } from './maincomponent/maincomponent';
 import { Homecomponenet } from './homecomponenet/homecomponenet';
 import { Library } from './library/library';
-import { Radio } from './radio/radio';
 
 export const routes: Routes = [{path:'login',component:Logincomponent},{path:'search',component:Maincomponent},{path:'home',component:Homecomponenet}
-    ,{path:'library',component:Library},{path:'radio',component:Radio}
+    ,{path:'library',component:Library}
 ];
