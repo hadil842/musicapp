@@ -30,11 +30,13 @@ a{
     color: #636060;
     font-size: 20px;
     text-decoration: none;
+    margin-left: 160px;
 }
 label {
     font-size: medium;
     font-family: inherit;
     margin-bottom: 5px;
+    margin-left: 40px;
     padding-left: 0;
     text-align: left;
     color: #636060;
@@ -42,6 +44,9 @@ label {
 input{
     width: 300px;
     height: 30px;
+    margin-left: 40px;
+    border-radius: 10px;
+    border-style:ridge;
 }
 
 input:focus,
@@ -54,6 +59,7 @@ button:focus {
 .button {
     text-align: center;
     margin-top: 30px;
+    margin-left: 45px;
 }
 
 button {

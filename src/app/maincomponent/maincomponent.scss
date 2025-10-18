@@ -1,28 +1,45 @@
-h1{
+body {
+    background-color: #fceceb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h1 {
     margin-left: 60vh;
     margin-top: 100px;
     color: #636060;
     font-size: 50px;
 }
+
 .search-container {
     display: flex;
-    width: 550px;
-    height: 50px;
-    border: solid 1px gray;
-    border-radius: 32px;
-    margin-top: 103px;
-    margin-left: 70vh;
-    box-sizing: border-box;
     align-items: center;
-    padding: 5px;
+    width: 600px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-top: 103px;
+    margin-left: 67vh;
 }
 
 .search-input {
     flex-grow: 1;
     border: none;
+    padding: 0 15px 0 20px;
     height: 100%;
-    padding: 0 10px;
+    font-size: 16px;
+    color: #333;
+    background: transparent;
+    border-radius: 25px 0 0 25px;
+    outline: none;
     box-sizing: border-box;
+    margin: 0;
 }
 
 .search-input:focus {
@@ -30,29 +47,30 @@ h1{
 }
 
 .search-input::placeholder {
-    color: #636060;
-
-    font-size: medium;
+    color: #a0a0a0;
 }
 
 .search-container button {
-    border: none;
-    background-color:#636060;
-    color: #fcf8f8;
-    border-radius: 0 32px 32px 0;
     width: 50px;
-    height: 48px;
-    margin-right: -5px;
+    height: 100%;
     border: none;
-    transition: all 0.2s ease-out;
+    background-color: #636060;
+    color: #fcf8f8;
+    font-size: 20px;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+    outline: none;
+    flex-shrink: 0;
 }
-.search-container button:focus{
-     background-color: rgb(241, 229, 224); 
-     color:#636060 ;
-     transition: all 0.2s cubic-bezier(0.175,0.885,0.32,1.275);
-     outline: none;
-     cursor: pointer; 
-     transform: scale(1.1);
-     border: none;
-     box-sizing: border-box;
+
+.search-container button:hover {
+    background-color: #4a4848;
+}
+
+.search-container button:active {
+    transform: scale(0.98);
 }
